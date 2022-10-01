@@ -1,8 +1,130 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import { boxingPunches } from '../hardData/boxingPunches';
-import { boxingTargetsBody } from '../hardData/boxingTargetsBody';
-import { boxingStats } from '../hardData/boxingStats';
+
+export const boxingPunches = [
+  {
+    name: 'jab',
+    description: 'jab',
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'straight',
+    description: 'straight',
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'hook',
+    description: 'hook',
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'uppercut',
+    description: 'uppercut',
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+];
+
+export const boxingStats = [
+  {
+    name: 'fights',
+    value: 0,
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'wins',
+    value: 0,
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'losses',
+    value: 0,
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'draws',
+    value: 0,
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'kos',
+    value: 0,
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+];
+export const boxingTargetsBody = [
+  {
+    name: 'head',
+    description: 'head',
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'chin',
+    description: 'chin',
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'body',
+    description: 'body',
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+  {
+    name: 'liver',
+    description: 'liver',
+    image: 'https://picsum.photos/200/300?image=1',
+    aux1: 0,
+    aux2: 0,
+    group1: [],
+    group2: [],
+  },
+];
 
 class Living {
   name: string;

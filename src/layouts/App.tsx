@@ -1,10 +1,10 @@
 import React from 'react';
-import { SignUpCard } from '../pages/SignUpCard';
+import { Home } from '../pages/Home';
 
 function App() {
   return (
     <>
-      <SignUpCard />
+      <Home />
     </>
   );
 }
