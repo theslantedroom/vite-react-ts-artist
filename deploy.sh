@@ -4,7 +4,7 @@
 set -e
 
 # build
-npm run build
+yarn build
 
 # navigate into the build output directory
 cd dist
@@ -16,7 +16,7 @@ echo > .nojekyll
 # echo 'www.example.com' > CNAME
 
 git init
-git checkout main
+git checkout -b dev
 git add -A
 git commit -m 'deploy'
 
@@ -27,3 +27,9 @@ git commit -m 'deploy'
 git push -f git@github.com:theslantedroom/vite-react-ts-artist.git main:gh-pages
 
 cd -
+
+
+#run in git: sh deploy.sh
+# git commit -m "Adding dist"
+# git subtree push --prefix dist origin gh-pages
+ 
