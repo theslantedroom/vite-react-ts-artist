@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
+import { SignUpCard } from '../pages/SignUpCard';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <SignUpCard />
     </>
   );
 }

@@ -5,11 +5,13 @@ export const lightPalette = {
   mode: 'light' as PaletteMode,
 
   primary: {
-    main: colors.black,
-    dark: colors.veryDarkGrey,
+    main: colors.darkBlue,
+    dark: colors.resolutionBlue,
+    light: colors.royalAirForceBlue,
+    contrastText: colors.azureBlue,
   },
   secondary: {
-    main: colors.red,
+    main: colors.darkGreen,
   },
   error: {
     main: colors.red,
@@ -19,11 +21,11 @@ export const lightPalette = {
   },
   background: {
     default: colors.white,
-    paper: colors.white,
+    paper: colors.seashell,
   },
   text: {
-    primary: colors.black,
-    secondary: colors.darkGrey,
+    primary: colors.darkestBlue,
+    secondary: colors.darkBlue,
   },
   action: {
     hover: colors.veryLightGrey,

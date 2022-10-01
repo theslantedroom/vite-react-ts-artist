@@ -3,7 +3,7 @@ import type { TypographyOptions } from '@mui/material/styles/createTypography';
 const fontWeight300 = 300;
 const fontWeight400 = 400;
 
-const fontFamily = ['Open Sans', 'sans-serif'].join(',');
+const fontFamily = ['Open Sans', 'sans-serif', 'Times New Roman'].join(',');
 
 export const typography: TypographyOptions = {
   fontFamily,

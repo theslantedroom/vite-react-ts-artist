@@ -5,25 +5,31 @@ export const darkPalette = {
   mode: 'dark' as PaletteMode,
 
   primary: {
-    main: colors.white,
+    main: colors.seashell,
     dark: colors.middleGrey,
   },
   secondary: {
-    main: colors.red,
+    main: colors.royalAirForceBlue,
   },
   error: {
     main: colors.red,
   },
-  success: {
+  warning: {
     main: colors.darkGreen,
   },
+  info: {
+    main: colors.royalAirForceBlue,
+  },
+  success: {
+    main: colors.resolutionBlue,
+  },
   background: {
-    default: colors.darkGrey,
-    paper: colors.darkGrey,
+    default: colors.black,
+    paper: colors.darkestBlue,
   },
   text: {
     primary: colors.white,
-    secondary: colors.veryLightGrey,
+    secondary: colors.middleGrey2,
   },
   action: {
     hover: colors.veryDarkGrey,

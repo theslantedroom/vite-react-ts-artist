@@ -18,6 +18,6 @@ const webPaletteComponents = {
 
 export const getPalette = (mode: 'dark' | 'light') => ({
   ...palettes[mode],
-  sw: colors,
+  customPalette: colors,
   components: webPaletteComponents[mode],
 });

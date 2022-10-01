@@ -1,11 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import React, {
-  useEffect,
-  useMemo,
-  useContext,
-  useState,
-  createContext,
-} from 'react';
+import React, { useEffect, useMemo, useContext, useState, createContext } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import type { PaletteMode } from '@mui/material';
@@ -38,15 +32,10 @@ interface Props {
   children: React.ReactNode;
 }
 
-export const MuiThemeProvider: React.FC<Props> = ({
-  optionalMode,
-  children,
-}) => {
+export const MuiThemeProvider: React.FC<Props> = ({ optionalMode, children }) => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const [mode, setMode] = useState<PaletteMode>(
-    prefersDarkMode ? 'dark' : 'light'
-  );
-
+  const [mode, setMode] = useState<PaletteMode>(prefersDarkMode ? 'dark' : 'light');
+  console.log('mode', mode);
   const theme = useMemo(
     () =>
       createTheme({
@@ -60,6 +49,7 @@ export const MuiThemeProvider: React.FC<Props> = ({
   );
 
   const togglePaletteMode = () => {
+    console.log('xxx', mode);
     setMode((prevMode: PaletteMode) => {
       const mode = prevMode === 'light' ? 'dark' : 'light';
       localStorage.setItem('mui-theme-mode', mode);
