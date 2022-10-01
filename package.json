@@ -9,7 +9,8 @@
     "serve": "vite preview",
     "check-versions": "ncu -p yarn",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy": "run in git: sh deploy.sh"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
