@@ -80,8 +80,8 @@ export const HomeLayout: React.FC<Props> = ({ illustration, children }) => {
             id="rMainPanel"
             item
             xs={11}
-            sm={8}
-            md={5}
+            sm={10}
+            md={9}
             lg={4}
             xl={3}
             sx={!splitScreen ? { mx: 'auto' } : {}}

@@ -24,14 +24,14 @@ export const globalSiteData = {
   careerHighlights: {
     title: 'Career Highlights',
     items: [
-      { name: '2020 BCCMA Award for Specialty Instrument Player of the Year for Banjo', url: '' },
-      { name: '2019 BCCMA Award for Specialty Instrument Player of the Year for Banjo', url: '' },
-      { name: '2018 BCCMA Award for Specialty Instrument Player of the Year for Banjo', url: '' },
-      { name: '2017 BCCMA Award for Specialty Instrument Player of the Year for Banjo', url: '' },
+      { name: '2020 BCCMA Award for Specialty Instrument Player of the Year / Banjo', url: '' },
+      { name: '2019 BCCMA Award for Specialty Instrument Player of the Year / Banjo', url: '' },
+      { name: '2018 BCCMA Award for Specialty Instrument Player of the Year / Banjo', url: '' },
+      { name: '2017 BCCMA Award for Specialty Instrument Player of the Year / Banjo', url: '' },
     ],
   },
   sectionA: {
-    title: 'Member of Chris Buck Band (Country Pop band) winners of:',
+    title: 'Chris Buck Band (Country Pop band)',
     items: [
       { name: '2017 BCCMA Album/EP of the Year Award', url: '' },
       {
@@ -45,7 +45,7 @@ export const globalSiteData = {
     ],
   },
   sectionB: {
-    title: 'Member of Rollin’ Trainwreck (Country/Bluegrass/Rock band) winners of:',
+    title: 'Rollin’ Trainwreck (Country/Bluegrass/Rock band)',
     items: [
       { name: '2017 BCCMA Album/EP of the Year Award', url: '' },
       {
@@ -56,20 +56,44 @@ export const globalSiteData = {
       { name: '2017 BCCMA Ray McAuley New Horizon Award', url: '' },
     ],
   },
-  gallery: [
-    { url: 'img/pux (4).jpg' },
-    { url: 'img/pux (5).jpg' },
-    { url: 'img/pux (8).jpg' },
-    { url: 'img/pux (9).jpg' },
-    { url: 'img/pux2.jpg' },
-    { url: 'img/pux7.jpg' },
-    { url: 'img/puxaward.jpg' },
-    { url: 'img/puxpic12.jpg' },
+  images: [
+    {
+      original: 'img/pux (4).jpg',
+      thumbnail: 'img/pux (4).jpg',
+    },
+    {
+      original: 'img/pux (5).jpg',
+      thumbnail: 'img/pux (5).jpg',
+    },
+    {
+      original: 'img/pux (8).jpg',
+      thumbnail: 'img/pux (8).jpg',
+    },
+    {
+      original: 'img/pux (9).jpg',
+      thumbnail: 'img/pux (9).jpg',
+    },
+    {
+      original: 'img/puxpic12.jpg',
+      thumbnail: 'img/puxpic12.jpg',
+    },
+    {
+      original: 'img/pux2.jpg',
+      thumbnail: 'img/pux2.jpg',
+    },
+    {
+      original: 'img/pux7.jpg',
+      thumbnail: 'img/pux7.jpg',
+    },
+    {
+      original: 'img/puxaward.jpg',
+      thumbnail: 'img/puxaward.jpg',
+    },
   ],
 
   contact: {
     title: 'Contact',
     mail: 'puxleymusic@protonmail.com',
-    copyright: 'TM & © 2020 All rights reserved.',
+    copyright: 'TM & ©',
   },
 };
