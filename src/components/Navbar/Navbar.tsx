@@ -2,8 +2,8 @@ import React, { useCallback, useState, useMemo } from 'react';
 
 import { Stack, Box, Divider, Chip, Link } from '@mui/material';
 
-import { appRoutes } from './../../layouts/App';
-
+export const appRoutes = [{ path: '/', element: null, navText: 'Home' }];
+console.log('appRoutes', appRoutes);
 function Navbar() {
   return (
     <Box
@@ -18,11 +18,7 @@ function Navbar() {
       }}
     >
       {appRoutes.map((route, index) => {
-        return (
-          <Link key={route.path} href={route.path} underline={'none'}>
-            <Chip label={route.navText} />
-          </Link>
-        );
+        return <Chip label={route.navText} />;
       })}
     </Box>
   );

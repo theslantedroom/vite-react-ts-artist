@@ -7,11 +7,11 @@ import { GlobalContextProvider } from '../contexts/global/GlobalContext';
 const container = document.getElementById('app');
 const root = createRoot(container!);
 root.render(
-  <React.StrictMode>
-    <GlobalContextProvider>
-      <MobileWrapper>
-        <App />
-      </MobileWrapper>
-    </GlobalContextProvider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <GlobalContextProvider>
+    <MobileWrapper>
+      <App />
+    </MobileWrapper>
+  </GlobalContextProvider>
+  // </React.StrictMode>
 );
