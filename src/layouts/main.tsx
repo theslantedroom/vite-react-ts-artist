@@ -5,6 +5,7 @@ import { MobileWrapper } from './MobileWrapper';
 import { GlobalContextProvider } from '../contexts/global/GlobalContext';
 import { MuiThemeProvider } from '../theme/MuiThemeProvider';
 import CssBaseline from '@mui/material/CssBaseline';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 const container = document.getElementById('app');
 const root = createRoot(container!);

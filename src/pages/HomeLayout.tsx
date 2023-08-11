@@ -1,8 +1,8 @@
-import React, { useMemo } from 'react';
-import LightModeIcon from '@mui/icons-material/LightMode';
-import NightlightRoundIcon from '@mui/icons-material/NightlightRound';
+import React from 'react';
+
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 // @mui material components
-import { Box, Typography, Grid, IconButton, Paper, useTheme, useMediaQuery } from '@mui/material';
+import { Box, Grid, Paper, useTheme, useMediaQuery } from '@mui/material';
 // Contexts
 import { usePaletteModeContext } from '../theme/MuiThemeProvider';
 export interface Props {
@@ -16,21 +16,9 @@ export const HomeLayout: React.FC<Props> = ({ illustration, children }) => {
   const theme = useTheme();
   const { togglePaletteMode } = usePaletteModeContext();
   const splitScreen = useMediaQuery('(min-width:1280px)');
-  const isWide = useMediaQuery('(min-width:450px)');
-  const isDark = theme.palette.mode === 'dark';
+  const isLg = useMediaQuery(theme.breakpoints.up('lg'));
 
-  const DarkModeBtn = useMemo(() => {
-    if (!isWide) return null;
-    return (
-      <IconButton onClick={togglePaletteMode}>
-        {isDark ? <NightlightRoundIcon /> : <LightModeIcon />}
-      </IconButton>
-    );
-  }, [isDark, isWide]);
-  const descSX = {
-    textAlign: 'center',
-  };
-
+  console.log('isLg', isLg);
   return (
     <Paper
       sx={{
@@ -42,19 +30,10 @@ export const HomeLayout: React.FC<Props> = ({ illustration, children }) => {
         overflow: 'hidden',
       }}
     >
-      <Box
-        sx={{
-          m: 1,
-          position: 'absolute',
-          right: 1,
-        }}
-      >
-        {DarkModeBtn}
-      </Box>
       <Box id="1" width="100%" height="100%">
         <Grid container sx={{ overflow: 'auto' }}>
           <Grid
-            id="imgPanel"
+            id="leftPanelOnWideScreen"
             item
             xs={12}
             lg={6}
@@ -64,18 +43,13 @@ export const HomeLayout: React.FC<Props> = ({ illustration, children }) => {
               display: 'flex',
             }}
           >
-            <Box
-              display={{ xs: 'none', lg: 'flex' }}
-              width="calc(100% - 2rem)"
-              height="calc(100vh - 2rem)"
-              sx={{
-                backgroundImage: `url(${illustration})`,
-                borderRadius: theme.shape.borderRadius,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}
-            />
+            {isLg ? (
+              <Box sx={{ width: '100%', pl: 3 }}>
+                <LiteYouTubeEmbed id="u31qwQUeGuM" title="Demo" />
+              </Box>
+            ) : null}
           </Grid>
+
           <Grid
             id="rMainPanel"
             item

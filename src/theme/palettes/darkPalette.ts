@@ -25,7 +25,7 @@ export const darkPalette = {
   },
   background: {
     default: colors.black,
-    paper: colors.darkestBlue,
+    paper: colors.blackestBlack,
   },
   text: {
     primary: colors.white,

@@ -19,12 +19,7 @@
           },
           {
             "name": "typescript",
-            "commands": ["tsc -w"]
-          },
-          {
-            "name": "storybook",
-            "commands": ["yarn storybook"],
-            "shouldRunCommands": false
+            "commands": ["yarn watch"]
           }
         ]
       }

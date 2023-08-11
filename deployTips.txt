@@ -2,9 +2,19 @@ $ git init
 $ git add .
 $ git commit -m "first-commit"
 $ git branch -M main
-$ git remote add origin http://github.com/username/repo-name.git
+$ git remote add origin http://github.com/theslantedroom/mysite.git
 $ git push -u origin main
 
 
 
 git remote add origin git@github.com:theslantedroom/repo-name.git
+
+in git hub, Allow Github Actions to create and approve pull request.  (under code and automation settings > actions > general)
+Also Set Workflow permissions to Read and Write permission here.
+
+
+Must add 'www.mysite.com' to custom domain in Github > settings pages > custom domains after every deploy (deploy github pages branch)
+
+To Hook up custom domain add a CNAME file to gh-Pages branch
+
+// If you are deploying to https://<USERNAME>.github.io/<REPO>/, for example your repository is at https://github.com/<USERNAME>/<REPO>, then set base to '/<REPO>/'. See /vite.config.ts

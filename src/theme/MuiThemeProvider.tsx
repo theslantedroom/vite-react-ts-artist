@@ -35,7 +35,6 @@ interface Props {
 export const MuiThemeProvider: React.FC<Props> = ({ optionalMode, children }) => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [mode, setMode] = useState<PaletteMode>(prefersDarkMode ? 'dark' : 'light');
-  console.log('mode', mode);
   const theme = useMemo(
     () =>
       createTheme({
@@ -49,7 +48,6 @@ export const MuiThemeProvider: React.FC<Props> = ({ optionalMode, children }) =>
   );
 
   const togglePaletteMode = () => {
-    console.log('xxx', mode);
     setMode((prevMode: PaletteMode) => {
       const mode = prevMode === 'light' ? 'dark' : 'light';
       localStorage.setItem('mui-theme-mode', mode);

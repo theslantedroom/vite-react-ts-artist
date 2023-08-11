@@ -8,11 +8,10 @@
 </p>
 
 -Vite
--React 17
--React-Router 6
+-React 18
 -Global context and reducer
--Classes examples
 -Eslint
+-TypeScript
 
 ## How to Install.
 
